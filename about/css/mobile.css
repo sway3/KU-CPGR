@@ -1,0 +1,310 @@
+
+header {
+    height: 69px;
+}
+
+header h1 {
+    float: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+}
+
+header h1 a {
+    display: block;
+    width: 240px;
+    height: calc(240px / 4.5);
+    background: url("../imgsrc/logo/headerlogo.png");
+    background-size: 240px calc(240px / 4.5);
+    color: transparent;
+}
+
+header .logo {
+    padding: 8px;
+}
+
+header .all {
+    display: block;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    width: 17px;
+    height: 12px;
+    position: relative;
+    color: transparent;
+    margin: 20px 20px 20px 10px;
+}
+
+header .all:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    margin-top: -1px;
+}
+
+header .menu.on li a {
+    color: #000;
+}
+
+/* tab */
+header .close,
+header .all,
+header h2 {
+    display: block;
+}
+header .ko {
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+    margin: 0;
+}
+
+header .en {
+    display: block;
+    font-size: 13px;
+    font-weight: lighter;
+    color: #000;
+    margin: 0 0 50px 0;
+}
+
+header .menu {
+    position: absolute;
+    left: -120%;
+    top: 0;
+    z-index: 101;
+    transition: all 0.5s;
+    width: 80%;
+    height: 100%;
+    background: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+header .menu.on {
+    left: 0;
+    padding: 20px;
+}
+
+header .menu.on nav {
+    border-top: 1.5px solid #66a6ff;
+}
+
+header .menu.on nav ul {
+    padding: 4px 0 0 0;
+    overflow: initial;
+}
+
+header .menu.on nav > ul > li {
+    float: none;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+header .menu > div > nav > ul {
+    text-align: left;
+}
+
+header .menu.on > div > nav > ul > li > a {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+header .menu.on > div > nav > ul > li > ul {
+    opacity: 1;
+    position: unset;
+    margin: 0;
+}
+
+header .menu > div > nav > ul > li > ul > li {
+    width: 100%;
+    float: none;
+    display: block;
+    background: none;
+}
+
+header .menu.on > div > nav > ul > li > ul li a {
+    width: 100%;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 12px;
+
+}
+
+header .menu > div > nav > ul ul a:hover {
+    background: none;
+}
+
+header .menu.on .close {
+    position: absolute;
+    right: 24px;
+    top: 32px;
+    width: 16px;
+    height: 16px;
+    color: transparent;
+}
+
+header .menu.on .close:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #5a5a5a;
+    transform: rotate(45deg);
+}
+
+header .menu.on .close:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #5a5a5a;
+    transform: rotate(-45deg);
+}
+
+.dim {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container .inner-container {
+    padding: 15px;
+}
+
+.container .inner-container > h2 {
+    display: inline-block;
+    padding: 10px 5px 10px 5px;
+    font-size: 20px;
+    color: #fff;
+    background: #4c6acd;
+    margin: 0 0 10px 0;
+    border-radius: 8px;
+}
+
+.container .inner-container .banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 0 10px 0;
+    background: #000;
+    border-radius: 8px;
+}
+
+.container .inner-container .banner h2 {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 15px;
+    padding: 0 0 0 8px;
+    font-size: 20px;
+    font-weight: bolder;
+    transform: translate(0, -50%);
+    border-left: 4px solid #fff;
+}
+
+.container .inner-container .banner h2 > div {
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.container .inner-container .banner img {
+    opacity: 0.5;
+    border-radius: 8px;
+}
+
+.container .inner-container .description > .firstline {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #000;
+    margin: 20px 0 0 0;
+}
+
+.container .inner-container .description h3 {
+    font-weight: 300;
+    font-size: 13px;
+    margin: 0 0 10px 0;
+    color: #000;
+}
+
+.container .inner-container .description .about-proteo {
+    margin: 20px 0 0 0;
+}
+
+.container .inner-container .description .about-medi {
+    margin: 20px 0 0 0;
+}
+
+.container .inner-container .description .icpc {
+    margin: 20px 0 0 0;
+}
+
+.container .inner-container .description .icpc > a {
+    font-weight: 300;
+    color: #0645AD;
+    font-size: 7px;
+}
+
+.container .inner-container .description .icpc > a:hover {
+    text-decoration: underline;
+    text-decoration-color: #0645AD;
+}
+
+
+.container .inner-container .description .about-proteo, .about-medi, .icpc, .tech {
+    text-align: justify;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #666666;
+}
+
+.container .inner-container .description > .about-proteo .iframe-container {
+    margin: 15px 0 25px 0;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.container .inner-container .description > .about-proteo .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container .inner-container .description p:first-child {
+    font-size: 20px;
+}
+
+footer {
+    padding: 20px;
+}
+
+footer p {
+    font-size: 7.5px;
+}
+
+footer p:last-child {
+    margin: 0;
+}

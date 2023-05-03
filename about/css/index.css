@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'NanumBarunGothic', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 125px;
+    background-image: linear-gradient(to right, #4c6acd, #9dcbff);
+}
+
+header .logo {
+    float: left;
+    padding: 15px 0 0 15px;
+}
+
+header .all,
+header h2,
+header .close {
+    display: none;
+}
+
+header h1 {
+    float: left;
+}
+
+header h1 a {
+    display: block;
+    width: 450px;
+    height: 100px;
+    background: url("../imgsrc/logo/headerlogo.png");
+    color: transparent;
+}
+
+
+header .menu > div > nav > ul {
+    text-align: center;
+    height: 125px;
+    overflow: hidden;
+    padding: 0 20px 0 0;
+}
+
+header .menu > div > nav > ul:hover {
+    overflow: visible;
+}
+
+header .menu > div > nav > ul > li {
+    float: left;
+    position: relative;
+}
+
+header .menu > div > nav > ul ul {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 100;
+}
+
+header .menu > div > nav > ul li:hover ul {
+    opacity: 1;
+}
+
+header .menu > div > nav > ul ul a {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+    padding: 0 0 0 10px;
+}
+
+header .menu > div > nav > ul > li > a {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 125px;
+    line-height: 125px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+}
+
+header .menu > div > nav > ul > li > .research{
+    cursor: default;
+}
+
+header .menu > div > nav > ul ul a:hover {
+    background: #5176d6;
+    transition: all 0.5s;
+    z-index: 100;
+}
+
+header .menu > div > nav > ul ul li {
+    min-width: 160px;
+    height: 50px;
+    line-height: 50px;
+    background: #66a6fc;
+}
+
+header nav > ul > li > a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background: #fff;
+    transition: width 0.5s;
+}
+
+header nav > ul > li:hover > a:after {
+    width: 100%;
+}
+
+header .menu {
+    float: right;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+.inner-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    max-width: 1000px;
+}
+
+.container .inner-container > h2 {
+    display: inline-block;
+    padding: 10px 5px 10px 5px;
+    font-size: 40px;
+    color: #fff;
+    background: #4c6acd;
+    margin: 0 0 20px 0;
+    border-radius: 8px;
+}
+
+.container .inner-container .banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 0 20px 0;
+    background: #000;
+    border-radius: 8px;
+}
+
+.container .inner-container .banner h2 {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 25px;
+    padding: 0 0 0 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    transform: translate(0, -50%);
+    border-left: 7px solid #fff;
+}
+
+.container .inner-container .banner h2 > div {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.container .inner-container .banner img {
+    opacity: 0.5;
+    border-radius: 8px;
+}
+
+.container .inner-container .description > .firstline .proteo {
+    color: #4c6acd;
+}
+
+.container .inner-container .description > .firstline .medi {
+    color: #00137b;
+}
+
+.container .inner-container .description > .firstline {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45px;
+    color: #000;
+    margin: 40px 0 0 0;
+}
+
+.container .inner-container .description h3 {
+    font-weight: 300;
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    color: #000;
+}
+
+.container .inner-container .description .about-proteo {
+    margin: 30px 0 0 0;
+}
+
+.container .inner-container .description .about-medi {
+    margin: 40px 0 0 0;
+}
+
+.container .inner-container .description .icpc {
+    margin: 40px 0 80px 0;
+}
+
+.container .inner-container .description .icpc > a {
+    font-weight: 300;
+    color: #0645AD;
+    font-size: 18px;
+}
+
+.container .inner-container .description .icpc > a:hover {
+    text-decoration: underline;
+    text-decoration-color: #0645AD;
+}
+
+
+.container .inner-container .description .about-proteo, .about-medi, .icpc, .tech {
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #666666;
+}
+
+.container .inner-container .description > .about-proteo .iframe-container {
+    margin: 20px 0 60px 0;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.container .inner-container .description > .about-proteo .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container .inner-container .description .tech img {
+    margin: 20px 0 20px 0;
+}
+
+.container .inner-container .description .tech a {
+    font-weight: 300;
+    color: #0645AD;
+    margin: 0 0 30px 0;
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-color: #0645AD;
+}
+
+.container .inner-container .description p:first-child {
+    font-size: 20px;
+}
+
+
+.container .inner-container .description .icpc .iframe-container {
+    margin: 20px 0 20px 0;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.container .inner-container .description .icpc .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tech {
+    margin: 0 0 30px 0;
+}
+
+.tech .mpe {
+    margin: 20px 0 0 0;
+}
+
+.tech .mpeimg {
+    margin: 20px 0 20px 0;
+}
+
+.tech .mpeimg img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dwlink {
+    margin: 0 0 80px 0;
+}
+
+.dwlink a {
+    color: #4c6acd;
+    text-decoration-color: #4c6acd;
+    text-decoration: underline;
+}
+
+footer {
+    background: #001530;
+    text-align: center;
+    padding: 40px;
+    border-top: 6px solid #301b00;
+}
+
+footer > p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+footer .line1 {
+    color: #fff;
+    font-weight: bold;
+}
+
+footer .line2 {
+    color: #dcdada;
+}
+
+footer .line3 {
+    color: #b6b6b6;
+}
