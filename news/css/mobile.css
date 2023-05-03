@@ -1,0 +1,314 @@
+
+header {
+    height: 69px;
+}
+
+header h1 {
+    float: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+}
+
+header h1 a {
+    display: block;
+    width: 240px;
+    height: calc(240px / 4.5);
+    background: url("../imgsrc/logo/headerlogo.png");
+    background-size: 240px calc(240px / 4.5);
+    color: transparent;
+}
+
+header .logo {
+    padding: 8px;
+}
+
+header .all {
+    display: block;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    width: 17px;
+    height: 12px;
+    position: relative;
+    color: transparent;
+    margin: 20px 20px 20px 10px;
+}
+
+header .all:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    margin-top: -1px;
+}
+
+header .menu.on li a {
+    color: #000;
+}
+
+/* tab */
+header .close,
+header .all,
+header h2 {
+    display: block;
+}
+header .ko {
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+    margin: 0;
+}
+
+header .en {
+    display: block;
+    font-size: 13px;
+    font-weight: lighter;
+    color: #000;
+    margin: 0 0 50px 0;
+}
+
+header .menu {
+    position: absolute;
+    left: -120%;
+    top: 0;
+    z-index: 101;
+    transition: all 0.5s;
+    width: 80%;
+    height: 100%;
+    background: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+header .menu.on {
+    left: 0;
+    padding: 20px;
+}
+
+header .menu.on nav {
+    border-top: 1.5px solid #66a6ff;
+}
+
+header .menu.on nav ul {
+    padding: 4px 0 0 0;
+    overflow: initial;
+}
+
+header .menu.on nav > ul > li {
+    float: none;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+header .menu > div > nav > ul {
+    text-align: left;
+}
+
+header .menu.on > div > nav > ul > li > a {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+header .menu.on > div > nav > ul > li > ul {
+    opacity: 1;
+    position: unset;
+    margin: 0;
+}
+
+header .menu > div > nav > ul > li > ul > li {
+    width: 100%;
+    float: none;
+    display: block;
+    background: none;
+}
+
+header .menu.on > div > nav > ul > li > ul li a {
+    width: 100%;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 12px;
+
+}
+
+header .menu > div > nav > ul ul a:hover {
+    background: none;
+}
+
+header .menu.on .close {
+    position: absolute;
+    right: 24px;
+    top: 32px;
+    width: 16px;
+    height: 16px;
+    color: transparent;
+}
+
+header .menu.on .close:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #5a5a5a;
+    transform: rotate(45deg);
+}
+
+header .menu.on .close:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #5a5a5a;
+    transform: rotate(-45deg);
+}
+
+.dim {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.bigcontainer .contents {
+    padding: 15px;
+}
+
+.bigcontainer .contents > h2 {
+    display: inline-block;
+    padding: 10px 5px 10px 5px;
+    font-size: 20px;
+    color: #fff;
+    background: #4c6acd;
+    margin: 0 0 10px 0;
+    border-radius: 8px;
+}
+
+.bigcontainer .contents .banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 0 10px 0;
+    background: #000;
+    border-radius: 8px;
+}
+
+.bigcontainer .contents .banner h2 {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 15px;
+    padding: 0 0 0 8px;
+    font-size: 20px;
+    font-weight: bolder;
+    transform: translate(0, -50%);
+    border-left: 4px solid #fff;
+}
+
+.bigcontainer .contents .banner h2 > div {
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.bigcontainer .contents .banner img {
+    opacity: 0.5;
+    border-radius: 8px;
+}
+
+.bigcontainer .contents .list > div {
+    padding: 15px 0 15px 0;
+    border-top: 1px solid #727272;
+}
+
+.bigcontainer .contents .list > div:first-child {
+    border: none;
+}
+
+.bigcontainer .contents .list > div:last-child {
+    border-bottom: 1px solid #727272;
+}
+
+.bigcontainer .contents .list > div h3 {
+    width: 100%;
+    margin: 0 0 5px 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+}
+
+.bigcontainer .contents .list > div .description {
+    margin: 5px 0 0 0;
+    font-size: 13px;
+    font-weight: 300;
+    color: #000;
+}
+
+.bigcontainer .contents .list > div .date {
+    margin: 5px 0 0 0;
+    font-size: 10px;
+}
+
+.bigcontainer .contents .list > div img {
+    margin: 10px 0 0 0;
+}
+
+.bigcontainer .contents .list > div > a {
+    display: block;
+    text-align: right;
+    margin: 10px 0 0 0;
+    font-size: 10px;
+    font-weight: 300;
+    color: #4c6acd;
+    text-decoration: underline;
+    text-decoration-color: #4c6acd;
+}
+
+.bigcontainer .contents .list > div > p {
+    font-size: 10px;
+    margin: 10px 0 10px 0;
+    line-height: 15px;
+}
+
+.bigcontainer .iframe-container {
+    margin: 10px 0 0 0;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.bigcontainer .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+footer {
+    padding: 20px;
+}
+
+footer p {
+    font-size: 7.5px;
+}
+
+footer p:last-child {
+    margin: 0;
+}
